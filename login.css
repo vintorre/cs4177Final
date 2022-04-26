@@ -1,0 +1,151 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+border: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: white;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: maroon;
+color: white;
+}
+
+h1,h2,h3{
+    color: white;
+}
+
+td, th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+hr{
+    margin: -20px -20px 20px;
+    height: 25px;
+    background-color: #DA8C07;   
+    color: #DA8C07;
+}
+body {
+    overflow: hidden;
+    font-family: 'Montserrat';
+    background-color: #C2C2C2;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=file]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #C2C2C2;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: maroon;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+}
+
+
+.header h2{
+    margin: -20px -20px;
+    padding: 2% 3%;
+    color: black;
+    background-color: white;
+}
+
+.ribbon{
+  margin: 20px -20px;
+  height: 47px;
+  background-color: #333;
+
+}
+.horizontal {
+  list-style-type: none;
+  margin: -20px -20px -20px -20px;
+}
+
+.horizontal li {
+  float: left;
+}
+
+.horizontal li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.horizontal li a.active {
+  background-color: maroon;
+}
+
+/* The Modal (background) */
+.login {    
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+    width: 75%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.login-content {
+    border-radius: 20px;
+    background-color: #333333;
+    margin: 0 auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+}
