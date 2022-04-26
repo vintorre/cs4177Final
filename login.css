@@ -39,8 +39,9 @@ hr{
     color: #DA8C07;
 }
 body {
-    overflow: hidden;
     font-family: 'Montserrat';
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #C2C2C2;
 }
 
@@ -139,7 +140,6 @@ img {
     color: white;
     width: 75%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
 }
 
 /* Modal Content/Box */

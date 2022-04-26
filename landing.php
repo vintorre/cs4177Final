@@ -31,7 +31,7 @@
   </div>
   <img src='egg.png' alt='Either Sonic stole my logo, or you are incapable of seeing how awesome it is!'>
   <h2> Student: <?php echo($_SESSION['grade']); ?>  </h2>
-  <h2> Your grade: <?php echo($_SESSION['grade']); ?> </h2>
+  <h2> Your grade: <?php echo($_SESSION['grade']); ?> <p style="color: #C2C2C2;"> MAKE SURE TO CHANGE YOUR PASSWORD FROM MMDD TO SOMETHING MORE COMPLEX</p></h2>
   <form class="login-content" method="POST" id='login' ecntype='multipart/form-data'>
     <div class="container">
       <a href='encrypt.exe' download '>
