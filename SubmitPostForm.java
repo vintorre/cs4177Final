@@ -8,7 +8,7 @@ class SubmitPostForm {
         //character array of characters used in password
         char[] allowed = new char[]{'1','2','3','4','5','6','7','8','9','0'};
         //URL in which the form is contained
-        URL url = new URL("https://cssrvlab01.utep.edu/Classes/cs5339/longpre/cs5352/loginScreen.php");
+        URL url = new URL("URL");
 
         //Size of password generated
         int k = 4;
@@ -56,11 +56,12 @@ class SubmitPostForm {
     static void printAllKLengthRec(char[] set,
                                    String prefix,
                                    int n, int k) throws Exception {
-        URL url = new URL("https://cssrvlab01.utep.edu/Classes/cs5339/longpre/cs5352/loginScreen.php");
+        URL url = new URL("URL");
 
         if (k == 0)
         {
-            sendRequest(url, "jonathan5_-uLQ", prefix);
+            //where request is sent
+            sendRequest(url, "userName", prefix);
             return;
         }
 
