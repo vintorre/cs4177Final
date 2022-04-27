@@ -4,26 +4,14 @@ import java.security.NoSuchAlgorithmException;
 import java.util.*;
 // ref: https://stackoverflow.com/questions/4205980/java-sending-http-parameters-via-post-method-easily
 class SubmitPostForm {
-    //using same function as in my random class, this will send requests for all possible strings of size 2 based on the
-    //array of characters, prints out all results. 
     public static void main(String[] args) throws Exception {
-        char[] allowed = new char[]{
-            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-            'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-            'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-        // The page containing the form on my localhost is:
-        // http://localhost/cs5352pwd/loginScreen.php
-        // Looking at "view page source", we see that the form has:
-        //   action="loginScreen.php"
-        //   name="un"
-        //   name="pw"
-        // So, the form page is the same as the action.
-        // If they were different, we would use the action for url.
+        //character array of characters used in password
+        char[] allowed = new char[]{'1','2','3','4','5','6','7','8','9','0'};
+        //URL in which the form is contained
         URL url = new URL("https://cssrvlab01.utep.edu/Classes/cs5339/longpre/cs5352/loginScreen.php");
 
-        System.out.println("Testing strings of size 2: ");
-        int k = 2;
+        //Size of password generated
+        int k = 4;
         printAllKLength(allowed, k);
         
     }
